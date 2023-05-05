@@ -12,7 +12,7 @@
 <body>
 	<header>
 		<section>
-			<div class="image-container">
+			<div class="profile-image-container">
 				<h1>Scott Borlon</h1>
 				<ul class="socials">
 					<li>
@@ -37,15 +37,16 @@
 					</li>
 				</ul>
 				
-				<!-- rings -->
-				<div class="rings">
-					<svg xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
+				<div class="svg-container">
+					<svg class="rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
 				</div>
-				<img src="assets/images/image-profile-mobile.webp" alt="">
-			</div>
-			<!-- circle -->
-			<div class="circle">
-				<svg xmlns="http://www.w3.org/2000/svg" width="129" height="129"><circle cx="830.5" cy="585.5" r="64" fill="none" stroke="#FFF" transform="translate(-766 -521)"/></svg>
+
+				<div class="svg-container">
+					<svg class="circles" xmlns="http://www.w3.org/2000/svg" width="129" height="129"><circle cx="830.5" cy="585.5" r="64" fill="none" stroke="#FFF" transform="translate(-766 -521)"/></svg>
+				</div>
+
+				<img src="assets/images/image-profile.png" alt="">
+
 			</div>
 
 			<h2>Nice to meet you! I'm <span>Scott Borlon.</span></h2>
@@ -55,7 +56,7 @@
 				building accessible web apps that users love.
 			</p>
 
-			<button>
+			<button class="primary-button">
 				CONTACT ME
 			</button>
 		</section>
@@ -63,106 +64,115 @@
 	<hr>
 	<main>
 		<section class="experience">
-			<li>
-				<h3>HTML</h3>
-				<span>4 Years Experience</span>
-			</li>
-
-			<li>
-				<h3>CSS</h3>
-				<span>4 Years Experience</span>
-			</li>
-
-			<li>
-				<h3>JavaScript</h3>
-				<span>4 Years Experience</span>
-			</li>
-			<li>
-				<h3>Accessibility</h3>
-				<span>4 Years Experience</span>
-			</li>
-			<li>
-				<h3>React</h3>
-				<span>3 Years Experience</span>
-			</li>
-			<li>
-				<h3>Sass</h3>
-				<span>3 Years Experience</span>
-			</li>
-
-		<hr>
-		<!-- rings -->
-		<svg class="rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
-
-		</section>
-		<section class="projects">
-			<h3>Projects</h3>
-			<button>Contact me</button>
 			<ul>
 				<li>
-					<img src="" alt="">
+					<h3>HTML</h3>
+					<span>4 Years Experience</span>
+				</li>
+
+				<li>
+					<h3>CSS</h3>
+					<span>4 Years Experience</span>
+				</li>
+
+				<li>
+					<h3>JavaScript</h3>
+					<span>4 Years Experience</span>
+				</li>
+				<li>
+					<h3>Accessibility</h3>
+					<span>4 Years Experience</span>
+				</li>
+				<li>
+					<h3>React</h3>
+					<span>3 Years Experience</span>
+				</li>
+
+				<div class="svg-container">
+					<svg class="rings" xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
+				</div>
+				
+				<li>
+					<h3>Sass</h3>
+					<span>3 Years Experience</span>
+				</li>
+			</ul>
+
+		<hr>
+
+		</section>
+		
+		<section class="projects">
+			<div class="projects-header">
+				<h3>Projects</h3>
+				<button class="primary-button">Contact me</button>
+			</div>
+			
+			<ul>
+				<li>
+					<img src="assets/images/thumbnail-project-1-large.webp" alt="">
 					<h4>Design portfolio</h4>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
 					</ul>
 					 
-					<button>View project</button>
-					<button>View code</button>
+					<button class="primary-button">View project</button>
+					<button class="primary-button">View code</button>
 				</li>
 				<li>
-					<img src="" alt="">
+					<img src="assets/images/thumbnail-project-2-large.webp" alt="">
 					<h4>E-learning landing page</h4>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
 					</ul>
-					<button>View project</button>
-					<button> code</button>
+					<button class="primary-button">View project</button>
+					<button class="primary-button">view code</button>
 				</li>
 				<li>
-					<img src="" alt="">
+					<img src="assets/images/thumbnail-project-3-large.webp" alt="">
 					<h4>Todo web app</h4>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
 					</ul>
-					<button>View project</button>
-					<button>View code</button>
+					<button class="primary-button">View project</button>
+					<button class="primary-button">View code</button>
 				</li>
 				<li>
-					<img src="" alt="">
+					<img src="assets/images/thumbnail-project-4-large.webp" alt="">
 					<h4>Entertainment web app</h4>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
 					</ul>
-					<button>View project</button>
-					<button>View code</button>
+					<button class="primary-button">View project</button>
+					<button class="primary-button">View code</button>
 				</li>
 				<li>
-					<img src="" alt="">
+					<img src="assets/images/thumbnail-project-5-large.webp" alt="">
 					<h4>Memory Game</h4>
 						<ul>
 							<li>HTML</li>
 							<li>CSS</li>
 							<li>JavaScript</li>
 						</ul>
-						<button>View project</button>
-						<button>View code</button>
+						<button class="primary-button">View project</button>
+						<button class="primary-button">View code</button>
 				</li>
 				<li>
-					<img src="" alt="">
+					<img src="assets/images/thumbnail-project-6-large.webp" alt="">
 					<h4>Art gallery showcase</h4>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>JavaScript</li>
 					</ul>
-					<button>View project</button>
-					<button>View code</button>
+					<button class="primary-button">View project</button>
+					<button class="primary-button">View code</button>
 				</li>
 			</ul>
 		</section>
@@ -174,17 +184,27 @@
 			I would love to hear about your project and how I could help. Please 
 			fill in the form, and I’ll get back to you as soon as possible.
 		</p>
+		
+		<div class="svg-container">
+			<svg xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
+		</div>
+		
 		<form action="" method="get" class="contact">
 			<input type="text" name="name" id="name" placeholder="Name" required>
-			
+			<hr>
+
 			<input type="text" name="email" id="email" placeholder="Email" required>
+			<hr>
 
 			<textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-			<!-- circles -->
-			<svg xmlns="http://www.w3.org/2000/svg" width="530" height="129"><g fill="none" fill-rule="evenodd" stroke="#FFF" opacity=".25"><ellipse cx="265" cy="40" rx="264.5" ry="39.5"/><ellipse cx="265" cy="52" rx="264.5" ry="39.5"/><ellipse cx="265" cy="65" rx="264.5" ry="39.5"/><ellipse cx="265" cy="77" rx="264.5" ry="39.5"/><ellipse cx="265" cy="89" rx="264.5" ry="39.5"/></g></svg>
+			<hr>
 
-			<input type="submit" value="Send message">
+			<input class="primary-button" type="submit" value="Send message">
 		</form>
+		
+		<hr>
+
+		<h2>Scott Borlon</h2>
 
 		<ul class="socials">
 			<li>
@@ -209,7 +229,6 @@
 			</li>
 		</ul>
 
-		<h2>adamkeyes</h2>
 	</footer>
 
 </body>

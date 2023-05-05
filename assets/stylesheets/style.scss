@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@100&family=Space+Grotesk:wght@500;700&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@100&family=Space+Grotesk:wght@300;500;700&display=swap');
+*{
 	margin: 0;
 	padding: 0;
 }
@@ -21,9 +21,30 @@ li {
 }
 
 hr {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	
+}
+
+.primary-button {
+	background-color: rgba(0, 0, 0, 0);
+	color: $white;
+	border: 0;
+	border-bottom: 2px solid $green;
+	padding-bottom: 10px;
+	font-size: 1.3em;
+	font-weight: 500;
+	padding:  15px 0;
+	text-transform: uppercase;
+}
+
+.svg-container {
+	position: absolute;
+	width: 100vw;
+	overflow: hidden;
+	svg {
+		position: relative;
+	}
 }
 
 header {
@@ -31,72 +52,204 @@ header {
 	justify-content: center;
 	text-align: center;
 
-	.image-container {
-		width: 60%; /* Set your desired width here */
-		margin: 0 auto; /* Center the container horizontally */
-		position: relative; /* Set the container as the reference for the absolute positioning of the child elements */
-	}
-	  
-	.image-container img {
-		display: block; /* Make the image a block element */
-		width: 100%; /* Make the image fill the container horizontally */
-		height: auto; /* Maintain the aspect ratio of the image */
-	}
-	  
-	h1 {
-		position: absolute; /* Position the list and heading absolutely within the container */
-		top: 10%; /* Position them in the vertical middle of the container */
-		left: 50%; /* Position them in the horizontal middle of the container */
-		transform: translate(-50%, -50%); /* Center them perfectly within the container */
-		width: max-content;
-		font-size: 2.4em;
-	}
+	.profile-image-container {
 
-	ul {
-		position: absolute; /* Position the list and heading absolutely within the container */
-		top: 20%; /* Position them in the vertical middle of the container */
-		left: 50%; /* Position them in the horizontal middle of the container */
-		transform: translate(-50%, -50%); /* Center them perfectly within the container */
-		display: flex;
-		justify-content: center;
+		h1 {
+			font-size: 2.5em;
+			margin: 40px 0;
+		}
+	
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+			margin: auto;
+	
+		}
+	
+		.svg-container{
+			height: 400px;
+			.rings{
+				right: 18em;
+			}
 
-		li {
-			margin: 10px 20px;
+			.circles{
+				left: 13em;
+				top: 11em;
+			}
+		}
+	
+		img {
+			width: 60%;
+			filter: grayscale(100%);
+			margin: 30px 0;
 		}
 	}
-	
-	.rings {
-		position: absolute;
-		right: 50vw;
-		top: 20vh;
+
+	h2, p {
+		margin: 15px 30px;
 	}
 
-	.circle {
-		position: absolute;
-		left: 80vw;
-		top: 45vh;
-	}
 	h2 {
-		padding: 30px 15px;
-		font-size: 2.3em;
-
+		font-size: 2em;
 		span {
 			border-bottom: 3px solid $green;
 		}
 	}
 
 	p {
+		margin-top: 30px;
 		color: $grey;
-		margin: 25px 40px;
+		font-weight: lighter;
 	}
 
-	button{
-		font-size: 2em;
-		background-color: #151515;
-		color: white;
-		border: none;
-		border-bottom: 2px solid #4ee1a0;
+	button {
 		margin-bottom: 80px;
+		margin-top: 30px;
+	}
+
+
+}
+
+main {
+	margin-bottom: 50px;
+
+	.experience{
+		text-align: center;
+
+		ul{
+			li{
+				margin: 50px;
+				h3 {
+					font-size: 2.5em;
+					margin-bottom: 5px;
+				}
+				span {
+					letter-spacing: 1px;
+					color: $grey;
+					font-weight: lighter;
+				}
+			}
+			
+			.svg-container{
+				height: 400px;
+				.rings{
+					left: 12em;
+					top: 4em;
+				}
+			}
+		}
+		
+	
+	}
+
+	.projects {
+
+		.projects-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h3, button {
+				margin: 70px 20px 40px 20px;
+			}
+
+			h3 {
+				font-size: 2.5em;
+			}
+		}
+
+		ul {
+			width: 90vw;
+			margin: auto;
+
+			li {
+				img {
+					width: 100%;
+				}
+
+				h4 {
+					font-size: 1.6em;
+					text-transform: uppercase;
+					margin: 20px 0;
+				}
+
+				ul {
+					display: flex;
+					li {
+						margin-right: 20px;
+						font-weight: lighter;
+					}
+				}
+
+				button {
+					margin-top: 20px;
+					margin-right: 25px;
+					margin-bottom: 40px
+				}
+			}
+		}
+	}
+
+}
+
+footer {
+	background-color: $black-light;
+	text-align: center;
+
+	h2 {
+		padding-top: 80px;
+		font-size: 2.2em;
+	}
+
+	p {
+		margin: 30px;
+		font-weight: lighter;
+	}
+
+	.svg-container{
+		height: 450px;
+		svg {
+			right: 19em;
+			top: 19em;
+		}
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		
+		::placeholder {
+			font-family: $font-stack;
+			color: $grey;
+			font-size: 1.8em;
+			font-weight: lighter;
+			text-transform: uppercase;
+		}
+
+		input, textarea {
+			background-color: rgba(0, 0, 0, 0);
+			border: none;
+			padding: 30px;
+			color: $white;
+			
+		}
+		
+		.primary-button {
+			width: 180px;
+			align-self: flex-end;
+			margin: 40px 20px 150px 0;
+
+		}
+
+	}
+	
+	ul {
+		display: flex;
+		justify-content: space-between;
+		width: 50vw;
+		margin: 20px auto ;
+		padding: 20px 0 80px 0 ;
 	}
 }
 
