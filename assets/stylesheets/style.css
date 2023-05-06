@@ -45,6 +45,17 @@ header {
   justify-content: center;
   text-align: center;
 }
+header .svg-container {
+  height: 500px;
+}
+header .svg-container .rings {
+  right: 80vw;
+  top: 18vh;
+}
+header .svg-container .circles {
+  left: 50vw;
+  top: 35vh;
+}
 header .profile-image-container h1 {
   font-size: 2.5em;
   margin: 40px 0;
@@ -54,16 +65,6 @@ header .profile-image-container ul {
   justify-content: space-between;
   width: 60%;
   margin: auto;
-}
-header .profile-image-container .svg-container {
-  height: 400px;
-}
-header .profile-image-container .svg-container .rings {
-  right: 18em;
-}
-header .profile-image-container .svg-container .circles {
-  left: 13em;
-  top: 11em;
 }
 header .profile-image-container img {
   width: 60%;
@@ -89,6 +90,57 @@ header button {
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 600px) {
+  header {
+    text-align: left;
+    padding: 50px;
+  }
+  header .svg-container {
+    height: 500px;
+  }
+  header .svg-container .rings {
+    right: 16em;
+    top: 4em;
+  }
+  header .svg-container .circles {
+    left: 88vw;
+    top: 40vw;
+  }
+  header .profile-image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .profile-image-container h1, header .profile-image-container ul {
+    margin: 0;
+    align-items: center;
+  }
+  header .profile-image-container ul {
+    width: 25%;
+  }
+  header .profile-image-container .img-container img {
+    position: absolute;
+    width: 45%;
+    right: 0;
+    top: 15vh;
+    z-index: -1;
+  }
+  header .profile-image-container .text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  header h2 {
+    width: 60%;
+    font-size: 3.8em;
+    margin: 0;
+    margin-top: 80px;
+  }
+  header p {
+    width: 60%;
+    margin: 0;
+    margin-top: 50px;
+  }
+}
 main {
   margin-bottom: 50px;
 }
@@ -150,6 +202,45 @@ main .projects ul li button {
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 600px) {
+  .display-none {
+    display: none;
+  }
+
+  main .experience ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin-top: 80px;
+  }
+  main .experience ul li {
+    margin: 0px;
+    padding: 40px;
+    text-align: left;
+  }
+  main .experience ul .svg-container {
+    height: 400px;
+  }
+  main .experience ul .svg-container .rings {
+    left: 5vw;
+    top: 6vh;
+  }
+  main .projects .projects-header {
+    margin: 0;
+    padding: 40px;
+  }
+  main .projects .projects-header h3, main .projects .projects-header button {
+    margin: 40px 0;
+  }
+  main .projects .projects-header h3 {
+    font-size: 3.6em;
+  }
+  main .projects ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
 footer {
   background-color: #242424;
   text-align: center;
@@ -163,7 +254,7 @@ footer p {
   font-weight: lighter;
 }
 footer .svg-container {
-  height: 450px;
+  height: 500px;
 }
 footer .svg-container svg {
   right: 19em;
@@ -197,6 +288,46 @@ footer ul {
   width: 50vw;
   margin: 20px auto;
   padding: 20px 0 80px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  footer form, footer h2:nth-child(1), footer p {
+    width: 60%;
+    margin: auto;
+  }
+  footer h2 {
+    font-size: 3.8em;
+    margin-bottom: 35px;
+  }
+  footer p {
+    letter-spacing: 1px;
+  }
+  footer .svg-container {
+    height: 600px;
+  }
+  footer .svg-container svg {
+    right: 60vw;
+    top: 45vh;
+  }
+  footer .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  footer .text-container h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+  footer .text-container ul {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+  }
+  footer .text-container h2, footer .text-container ul {
+    margin: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
